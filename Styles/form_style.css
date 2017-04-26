@@ -1,0 +1,63 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-image: url(../img/gorund.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	width:400px;
+	margin: 150px auto;
+}
+
+fieldset {
+	background-color: #F7F7F7;
+	border: 2px solid #4AB3C6;
+	border-radius: 10px;
+}
+
+p.button input,h1 {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+
+
+input:not([type="checkbox"]) {
+	padding: 10px;
+	margin: 10px 20px 10px;
+	width: 80%;
+	border-radius: 5px;	
+}
+
+::-webkit-input-placeholder {color:#c0392b;}
+:focus::-webkit-input-placeholder {color: transparent}
+::-webkit-input-placeholder {text-align:center;}
+
+label {
+	padding-left: 20px;
+	color: #425D61;
+	font-weight: bold;
+}
+
+.button input {
+	background-color: 	#20B2AA;
+	font-size: 24px;
+	width: 86%;
+	cursor: pointer;
+}
+
+.button input:hover { 
+    background-color: #4AD3C6;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	padding:10px 0;
+}
