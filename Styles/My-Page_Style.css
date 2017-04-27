@@ -134,36 +134,26 @@ figcaption:hover {
     cursor:pointer; 
 }
 
+.container-buttons, .container-content {
+    display: flex;
+    justify-content: space-around;
+}
 
-
-
-#video, #audio {
+#video, #audio, #map {
     width: 30%;
-    padding: 20px 0;
-    margin:20px;
-    text-align: center;
+    height: 450px;
+    padding: 10px 10px;
+    margin: 20px;
     box-shadow: 1px 1px 20px rgba(255, 255, 255, .6);
+    border:2px solid grey;
     display: none;
 }
 
-#map {
-    width:30%;
-    height:350px;
-    margin:20px;
-    
-    
+.container-content iframe {
+    width: 100%;
+    height: 450px;
 }
 
-#audio, #video {
-
-}
-
-.container {
- width: 630px;
- height: 40px;
- display: inline-flex;
- justify-content: space-around;
-}
 
 #video-content, #audio-content, #map-content {
     outline: none;
