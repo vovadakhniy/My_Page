@@ -6,7 +6,6 @@
 html,body {
   font-family:  "Roboto", sans-serif;
   background: url(../img/bg.jpg)  center no-repeat ;
-  background-size: 100%;
   background-size: cover;
 }
 
@@ -50,7 +49,7 @@ html,body {
   position: relative;
 }
 
-.items-underline:after {
+.items-underline::after {
   display: block;
   position: absolute;
   left: 0;
@@ -66,7 +65,7 @@ html,body {
   color: #98004a;
 }
 
-.items-underline:hover:after {
+.items-underline:hover::after {
   width: 100%;
 }
 
@@ -98,8 +97,8 @@ html,body {
 }
 
 .left-block, .right-block, .center-block {
- float:left;
- width: 33%;
+   float:left;
+   width: 33%;
 }
 
 .left-block, .right-block {
@@ -154,10 +153,10 @@ figcaption:hover {
     height: 450px;
 }
 
-
-#video-content, #audio-content, #map-content {
+.content-button {
     outline: none;
     height: 40px;
+    margin-top: 30px;
     text-align: center;
     width: 130px;
     border-radius: 40px;
@@ -173,20 +172,10 @@ figcaption:hover {
     transition: all 0.25s ease;
 }
 
-#video-content:hover {
+.content-button:hover {
   color: white;
   background: #1ECD97;
 }
-#audio-content:hover {
-  color: white;
-  background: #1ECD97;
-}
-
-#map-content:hover {
-  color: white;
-  background: #1ECD97;
-}
-
 
 .main-footer {
     height: 140px;
@@ -207,13 +196,18 @@ figcaption:hover {
 }
 
 .fa  {
-
     width: 16px;
     height: 16px;
     border-radius: 100%;
     border: solid 2px rgba(255, 255, 255, 0.25);
     background-color: rgba(255, 255, 255, 0.075);
     margin-right: 40px;
+}
+
+.fa::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa:hover {

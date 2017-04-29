@@ -1,7 +1,7 @@
 function myMap() {
   var myCenter = new google.maps.LatLng(48.9209059,24.702481900000002);
   var mapCanvas = document.getElementById("map");
-  if (mapCanvas.style.display === 'none') {
+  if (mapCanvas.style.display === 'none' ) {
         mapCanvas.style.display = 'block';
     } else {
         mapCanvas.style.display = 'none';
@@ -17,3 +17,4 @@ function myMap() {
     map.setCenter(marker.getPosition());
   });
 }
+

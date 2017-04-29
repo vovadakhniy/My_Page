@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Individual Project_1</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="../Styles/font-awesome.min.css">
+	<link rel="stylesheet" href="../fonts/font-awesome.min.css">
 	<link rel="stylesheet" href="../Styles/My-Page_Style.css">
 </head>
 <body>
@@ -58,9 +58,9 @@
 					</div>
 				</div>
 				<div class="container-buttons">
-					<button id="video-content" onclick="myFunction()">ВІДЕО</button>
-					<button id="audio-content" onclick="music()">АУДІО</button>
-					<button id="map-content" onclick="myMap()">ГЕОЛОКАЦІЯ</button>
+					<button class="content-button" onclick="myFunction()">ВІДЕО</button>
+					<button class="content-button" onclick="music()">АУДІО</button>
+					<button class="content-button" onclick="myMap()">ГЕОЛОКАЦІЯ</button>
 				</div>
 				<div class="container-content">
 					<div id="video">
@@ -87,13 +87,10 @@
 					</ul>			
 				</nav> 
 			</footer>
-
 			<script src="../JavaScript/video.js"></script>
 			<script src="../JavaScript/audio.js"></script>
 			<script src="../JavaScript/maps.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDMVr_rHta-NZADPruemBxd-_lhZqD2_M&callback=myMap"></script>
-
-		</script>
 	</body>
 	</html>
