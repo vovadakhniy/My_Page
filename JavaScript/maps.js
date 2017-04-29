@@ -6,14 +6,14 @@ function myMap() {
     } else {
         mapCanvas.style.display = 'none';
     }
-  var mapOptions = {center: myCenter, zoom: 5};
+  var mapOptions = {center: myCenter, zoom: 7};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 
   // Zoom to 9 when clicking on marker
   google.maps.event.addListener(marker,'click',function() {
-    map.setZoom(9);
+    map.setZoom(15);
     map.setCenter(marker.getPosition());
   });
 }

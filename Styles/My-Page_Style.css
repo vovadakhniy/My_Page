@@ -164,7 +164,6 @@ figcaption:hover {
     border: 2px solid #1ECD97;
     color: #1ECD97;
     letter-spacing: 1px;
-    text-shadow: 0;
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
@@ -184,10 +183,10 @@ figcaption:hover {
 }
 
 .icons-social ul li {
-    display: inline;  
+    display: inline-block; 
 }
 
-.icons-social ul li a {
+.icons-social ul li a i {
     color: #FDFFF6;
     line-height: 15px;
     font-size: 20px;
