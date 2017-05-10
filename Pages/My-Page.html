@@ -6,7 +6,10 @@
 	<title>Individual Project_1</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../Styles/animate.css">
 	<link rel="stylesheet" href="../Styles/My-Page_Style.css">
+	<link rel="stylesheet" href="../Styles/lightbox.css">
+	
 </head>
 <body>
 	<div class="wrapper">
@@ -27,78 +30,103 @@
 			<div class="main-logo">
 				<img class="logo" src="../img/l3.jpg" alt="">
 			</div>
-			<h1>FOLLOWING OUR DREAMS <br>KEEPS OUR SOULS ALIVE</h1>
+			<h1 >
+				<span class="title">FOLLOWING OUR DREAMS</span><br>
+				<span class="titletwo">KEEPS OUR SOULS ALIVE</span>
+			</h1>
 			<div class="pictures">
 				<div class="left-block">
 					<figcaption>
-						<img class="left-top" src="../img/8.jpg" alt="">Людину
+						<a class="left top" href="../img/8.jpg"  data-lightbox="image-1">
+							<img src="../img/8.jpg" alt="Людину">Людину
+						</a>
 					</figcaption><br>
 					<figcaption>
-						<img class="left-bottom" src="../img/6.jpg" alt="">Любов
+						<a class="left top" href="../img/6.jpg"  data-lightbox="image-2">
+							<img class="left bottom" src="../img/6.jpg" alt="">Любов
+						</a>
 					</figcaption>
 				</div>
 				<div class="center-block">
 					<figcaption>
-						<img class="center-top" src="../img/3.jpg" alt="">Роблять
+						<a class="center top" href="../img/3.jpg"  data-lightbox="image-3">
+							<img src="../img/3.jpg" alt="">Роблять
+						</a>
 					</figcaption><br>
 					<figcaption>
-						<img class="center-middle" src="../img/4.jpg" alt="">три речі: </figcaption>
-						<br>
-						<figcaption>
-							<img class="center-bottom" src="../img/5.jpg" alt="">Можливість подорожувати
-						</figcaption>
-					</div>
-					<div class="right-block">
-						<figcaption>
-							<img class="right-top" src="../img/7.jpg" alt="">Щасливою
-						</figcaption><br>
-						<figcaption>
-							<img class="right-bottom" src="../img/9.jpg" alt="">Люди які поряд
-						</figcaption>
-					</div>
+						<a class="center middle" href="../img/4.jpg"  data-lightbox="image-4">
+							<img src="../img/4.jpg" alt="">три речі: 
+						</a>
+					</figcaption><br>
+					<figcaption>
+						<a class="center bottom" href="../img/5.jpg"  data-lightbox="image-5">
+							<img src="../img/5.jpg" alt="">Можливість подорожувати
+						</a>
+					</figcaption>
 				</div>
-				<div class="container-buttons">
-					<button class="content-button" onclick="myFunction()">ВІДЕО</button>
-					<button class="content-button" onclick="music()">АУДІО</button>
-					<button class="content-button" onclick="myMap()">ГЕОЛОКАЦІЯ</button>
+				<div class="right-block">
+					<figcaption>
+						<a class="right top" href="../img/7.jpg"  data-lightbox="image-6">
+							<img src="../img/7.jpg" alt="">Щасливою
+						</a>
+					</figcaption><br>
+					<figcaption>
+						<a class="right bottom" href="../img/9.jpg"  data-lightbox="image-7">
+							<img src="../img/9.jpg" alt="">Люди які поряд
+						</a>
+					</figcaption>
 				</div>
-				<div class="container-content">
-					<div id="video">
-						<iframe  src="https://www.youtube.com/embed/2jtTQ47u5bI" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div id="audio">
-						<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13262271&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-					</div>
-					<div id="map">
-						<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13262271&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-					</div>
-				</main>
 			</div>
-			<footer class="main-footer">
-				<nav class="icons-social">  
-					<ul>
-						<li>
-							<a href="https://www.facebook.com/vova.dakhniy" target="_bank">
-								<i class="fa fa-facebook-square" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://vk.com/dakhniy87" target="_bank">
-								<i class="fa fa-vk" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:vova.dakhniy@gmail.com" target="_bank">
-								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>			
-				</nav> 
-			</footer>
-			<script src="../JavaScript/video.js"></script>
-			<script src="../JavaScript/audio.js"></script>
-			<script src="../JavaScript/maps.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDMVr_rHta-NZADPruemBxd-_lhZqD2_M&callback=myMap"></script>
+			<div class="container-buttons">
+				<button class="content-button" onclick="myFunction()">ВІДЕО</button>
+				<button class="content-button" onclick="music()">АУДІО</button>
+				<button class="content-button" onclick="myMap()">ГЕОЛОКАЦІЯ</button>
+			</div>
+			<div class="container-content">
+				<div id="video">
+					<iframe  src="https://www.youtube.com/embed/2jtTQ47u5bI" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div id="audio">
+					<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13262271&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</div>
+				<div id="map">
+					<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13262271&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				</div>
+			</main>
+		</div>
+		<footer class="main-footer">
+			<nav class="icons-social">  
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/vova.dakhniy" target="_bank">
+							<i class="fa fa-facebook-square"  aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://vk.com/dakhniy87" target="_bank">
+							<i class="fa fa-vk" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:vova.dakhniy@gmail.com" target="_bank">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>			
+			</nav> 
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../JavaScript/video.js"></script>
+		<script src="../JavaScript/audio.js"></script>
+		<script src="../JavaScript/maps.js"></script>
+		<script src="../JavaScript/lightbox.js"></script>
+		<script src="../JavaScript/jquery.textillate.js"></script>
+		<script src="../JavaScript/index.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDMVr_rHta-NZADPruemBxd-_lhZqD2_M&callback=myMap"></script>
+		<script>
+			lightbox.option({
+				'fadeDuration':850
+			})
+		</script>
 	</body>
 	</html>
